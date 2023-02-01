@@ -1,0 +1,313 @@
+/*reset*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*estilos generales*/
+
+body{
+    font-family: "monserrat", sans-serif ;
+}
+
+
+
+
+/*estilo del header*/
+
+.header-fondo {
+    
+    background: linear-gradient(#c07a40,#dbac86);
+   
+}
+
+
+header a{
+    text-decoration: none;
+}
+
+header h1{
+    font-size: 2.5rem;
+}
+
+
+
+header nav ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+    header nav ul li{
+        padding: 0.7rem;
+        border: 2px 2px solid black;
+        text-align: center;
+               
+    }
+
+ 
+    .txt-white{
+        color: rgb(255, 255, 255);
+    }
+    .txt-black{
+        color: rgb(0, 0, 0);
+    }
+
+
+    /*estilos del main*/
+
+    main{
+        background: linear-gradient(#c07a40,#dbac86);
+    }
+    
+    .bienvenida{
+       
+        padding: 6.5rem;
+        text-align: center;
+        background-image: url(../img/imagen-fondo.jpg);
+        
+   
+    }
+
+    .titulo-main{
+        font-size: 2.8rem;
+        gap: 20px;
+        color: rgb(204, 198, 198);
+       
+    }
+    
+    .parrafo-main{
+        font-size: 2rem;
+        padding: 20px;
+        color: rgb(204, 198, 198);
+    }
+
+    .boton-main{
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px 30px;
+        border-radius: 20px;
+        background: rgb(216, 141, 72);
+        border: 2px solid rgb(3, 3, 3);
+        color: white;
+        text-decoration: none;
+                       
+    }
+    
+   
+    
+    .titulos{
+        display: block;
+        display: flex;
+        background: linear-gradient(#c07a40,#dbac86);
+        height: 300px;
+        font-size: x-large;
+
+    }
+    .titulos-hijo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       gap: 1rem;
+       justify-content: center;
+        
+    }
+    
+   /*estilos de los beneficios */
+
+   .beneficios{
+    background: linear-gradient(#c07a40,#dbac86);
+   }
+
+   .titulo-beneficios{
+    font-size: xx-large;
+    text-align: center;
+    padding: 2rem;
+   }
+
+   .beneficios-padre{
+    
+    padding: 2rem;
+    height: 55rem;
+    width: 69rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 150px;
+    
+    }
+
+   .beneficios-hijos{
+   
+   width: 150px;
+   height: 150px;
+    
+  
+   }
+
+   /*estilos del footer*/
+
+   footer{
+    background-color: #c07a40;
+    text-align: center;
+    padding: 1rem;
+   
+}
+
+footer img{
+    width: 50%;
+}
+
+
+.redes-sociales{
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+   
+}
+   
+/*estilos del catalogo de productos*/
+
+.padre {
+    font-size: xx-large;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding:3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.padre-hijo{
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    margin: 1rem;
+    
+}
+
+
+
+
+
+   
+/*estilo de experiencias*/
+
+   .row{ 
+    padding: 3rem;
+    font-size:larger;
+    }
+
+    /*Animaciones con el mouse*/
+   
+    @media screen and (min-width:1024px) {
+        
+       header nav ul li:hover{
+        background-color: #c07a40;
+        transform: scale(1.2), ;
+       }
+
+       .boton-main:hover{
+        transform: scale(1.2);
+       
+       }
+
+       .img-footer:hover{
+        transform: scale(1.3);
+       }
+
+       .padre-hijo:hover{
+        box-shadow: 0.2rem 0.2rem 0.2rem black;
+       }
+
+     
+    }
+
+    @media screen and (max-width:400px){
+        
+        /*adaptacion index*/
+        .bienvenida{
+       
+            padding: 1.5rem;
+            text-align: center;
+                     
+       
+        }
+
+        .titulos{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            
+        }
+
+        .titulos-hijo{
+            align-items: center;
+            text-align: center;
+           gap: 0.5rem;
+           justify-content: center;
+        }
+        
+    
+
+        .beneficios-padre img{
+            width: auto;
+        }
+
+        .beneficios-hijos{
+            height: auto;
+            width: auto;
+        }
+
+    .beneficios-padre{
+    
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+       }
+
+       /*adaptacion envios y pagos*/
+
+       .mapa{
+        width: 12rem;
+        height: 12rem;
+       }
+
+    
+
+    /*adaptacion experiencias*/
+    .experiencias img{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        
+    }
+
+  
+    .row p{ 
+       height: auto;
+       width: auto;
+        }
+
+    }
+    
+
+    
